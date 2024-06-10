@@ -1,0 +1,90 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  margin: 0;
+}
+
+.wrapper-bmi {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-bmi-result {
+  width: 400px;
+}
+
+.container-bmi {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.bmi-graph-container {
+  position: relative;
+}
+
+.bmi-graph {
+  width: 100%; /* 이미지의 크기를 조절하세요 */
+  max-width: 600px; /* 최대 너비를 설정하세요 */
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#bmi-marker {
+  position: absolute;
+  color: red;
+  font-size: 24px;
+  top: 0%; /* 그래프 위에서부터 10% 위치에 표시 */
+  left: 50%; /* 초기 위치를 가운데로 설정 */
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+.container-bmi h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}

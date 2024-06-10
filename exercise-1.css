@@ -1,0 +1,45 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.e-container {
+  position: relative;
+  height: calc(100vh - 130px); /* 수정 */
+  width: 100%; /* 수정 */
+  top: 130px;
+  bottom: 130px;
+  overflow: hidden; /* 수정 */
+}
+
+#movingImage {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s;
+  transform: scaleX(-1) rotate(180deg);
+  left: 0; /* 추가 */
+  top: 0; /* 추가 */
+}
+.a-container {
+  position: absolute;
+  top: 35%;
+  left: 17%;
+}
+
+.b-container {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+
+.b-container a {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  z-index: 100;
+}

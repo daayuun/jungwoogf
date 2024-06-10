@@ -1,0 +1,18 @@
+.a-container {
+  position: absolute;
+  top: 35%;
+  left: 17%;
+}
+
+.b-container {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+
+.b-container a {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  z-index: 10000;
+}
